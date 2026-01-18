@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Armas Cuerpo a Cuerpo</title>
+    <link rel="stylesheet" href="style.css">
+body {
+    margin: 0;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.cartel {
+    position: relative;
+    width: 1400px;
+    height: 700px;
+    background: url("img/fondo.png") no-repeat center/cover;
+    font-family: 'Georgia', serif;
+    color: #2b2b2b;
+}
+
+/* Numeración */
+.num {
+    position: absolute;
+    top: 20px;
+    font-size: 70px;
+    font-weight: bold;
+}
+.num.izquierda { left: 30px; }
+.num.derecha { right: 30px; }
+
+/* Título */
+.titulo {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    text-align: center;
+    font-size: 64px;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 0 #000;
+}
+
+/* Línea decorativa */
+.linea {
+    position: absolute;
+    top: 140px;
+    left: 100px;
+    right: 100px;
+    height: 4px;
+    background: #2b2b2b;
+}
+
+/* Columnas */
+.col {
+    position: absolute;
+    top: 180px;
+    width: 40%;
+    height: 420px;
+}
+
+.col.izquierda { left: 80px; }
+.col.derecha { right: 80px; }
+
+/* Armas */
+.arma {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 240px;
+}
+
+/* Texto */
+.texto {
+    position: absolute;
+    top: 0;
+    left: 260px;
+    width: 420px;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Precio */
+.precio {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 72px;
+    font-weight: bold;
+}
+
+/* Pie */
+.pie {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+</head>
+<body>
+
+<div class="cartel">
+
+    <!-- Numeración superior -->
+    <div class="num izquierda">5</div>
+    <div class="num derecha">6</div>
+
+    <!-- Título -->
+    <div class="titulo">ARMAS CUERPO A CUERPO</div>
+
+    <!-- Línea decorativa -->
+    <div class="linea"></div>
+
+    <!-- Columna izquierda -->
+    <div class="col izquierda">
+        <img src="img/pico.png" class="arma">
+        <div class="texto">
+            Con esta fabulosa maravilla aunque un poco oxidada
+            podrás picar sin parar hasta que te sangren las manos
+            y llegues a replantearme si eres tu propio esclavo
+            del farmeo o si eres masoquista.
+            <br><br>
+            Con este pico de metal podrás sentirte poderoso
+            aunque no sea cierto ni mucho menos...
+        </div>
+        <div class="precio">2D₽</div>
+    </div>
+
+    <!-- Columna derecha -->
+    <div class="col derecha">
+        <img src="img/hacha.png" class="arma">
+        <div class="texto">
+            Esta maravillosa hacha de metal forjada en un horno
+            de un zulo y un mango talado por lo que parece por
+            unos dientes mal cuidados podrás hacer maravillas,
+            talaras bosques enteros, si tu mayor propósito es
+            fastidiar a los indios no hay mejor forma que
+            deforestando todo su bosque con esta hacha que
+            más bien parece que es una sierra
+        </div>
+        <div class="precio">5D₽</div>
+    </div>
+
+    <!-- Pie -->
+    <div class="pie">
+        Wheeler, Rawson and Co.<br>
+        Our Guarantee – The Best Prices – The Finest Quality – Always.
+    </div>
+
+</div>
+
+</body>
+</html>
