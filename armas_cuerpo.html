@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Armas Cuerpo a Cuerpo</title>
+
+<!-- FUENTES -->
+<link href="https://fonts.googleapis.com/css2?family=Rye&family=Patrick+Hand&family=Baloo+2:wght@800&display=swap" rel="stylesheet">
+
+<style>
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* FONDO COMPLETO */
+body {
+    background: url("https://www.publicdomainpictures.net/pictures/450000/nahled/pergament-vintage-hintergrund-alt-1650324837zDH.jpg")
+                no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+/* CONTENEDOR CENTRAL */
+.main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CARTEL */
+.cartel {
+    position: relative;
+    width: 1400px;
+    height: 700px;
+    color: #2b2b2b;
+}
+
+/* NUMEROS */
+.num {
+    position: absolute;
+    top: 20px;
+    font-size: 70px;
+    font-family: 'Rye', serif;
+}
+.num.izq { left: 30px; }
+.num.der { right: 30px; }
+
+/* TITULO */
+.titulo {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    text-align: center;
+    font-size: 64px;
+    font-family: 'Rye', serif;
+    letter-spacing: 4px;
+    text-shadow: 3px 3px 0 rgba(0,0,0,0.4);
+}
+
+/* LINEA */
+.linea {
+    position: absolute;
+    top: 140px;
+    left: 100px;
+    right: 100px;
+    height: 4px;
+    background: #2b2b2b;
+}
+
+/* COLUMNAS */
+.col {
+    position: absolute;
+    top: 180px;
+    width: 40%;
+    height: 420px;
+}
+
+.col.izq { left: 80px; }
+.col.der { right: 80px; }
+
+/* ARMAS */
+.arma {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 240px;
+    filter: drop-shadow(4px 4px 4px rgba(0,0,0,0.4));
+}
+
+/* TEXTO */
+.texto {
+    position: absolute;
+    top: 0;
+    left: 260px;
+    width: 420px;
+    font-size: 21px;
+    font-family: 'Patrick Hand', cursive;
+    line-height: 1.45;
+}
+
+/* PRECIO */
+.precio {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 72px;
+    font-family: 'Baloo 2', cursive;
+}
+
+/* FOOTER INTERACTIVO */
+footer {
+    background: #000;
+    text-align: center;
+    padding: 18px 10px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Rye', serif;
+    letter-spacing: 1px;
+    display: inline-block;
+    transition: all 0.35s ease;
+}
+
+/* HOVER */
+footer a:hover {
+    color: #f5d37b;
+    text-shadow:
+        0 0 5px rgba(245,211,123,0.6),
+        0 0 10px rgba(245,211,123,0.4);
+    transform: scale(1.05);
+}
+
+/* CLICK */
+footer a:active {
+    transform: scale(0.98);
+    text-shadow: none;
+    opacity: 0.8;
+}
+
+/* NAVEGACION GLOBAL */
+.nav-arrow {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 70px;
+    height: 70px;
+    background: radial-gradient(circle at top left, #444, #000);
+    border: 3px solid #c9a24d;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.35s ease;
+    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+    z-index: 1000;
+}
+
+/* POSICION EN BORDES */
+.nav-arrow.left  { left: 25px; }
+.nav-arrow.right { right: 25px; }
+
+/* ICONO */
+.nav-arrow span {
+    font-family: 'Rye', serif;
+    font-size: 42px;
+    color: #f5d37b;
+    text-shadow: 2px 2px 0 #000;
+    transition: all 0.35s ease;
+}
+
+/* HOVER */
+.nav-arrow:hover {
+    transform: translateY(-50%) scale(1.1);
+    box-shadow:
+        0 0 15px rgba(245,211,123,0.6),
+        0 0 30px rgba(245,211,123,0.4);
+}
+
+.nav-arrow:hover span {
+    color: #fff;
+    text-shadow:
+        0 0 6px rgba(255,255,255,0.8),
+        2px 2px 0 #000;
+}
+
+/* CLICK */
+.nav-arrow:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+
+</style>
+</head>
+<!-- FLECHA IZQUIERDA (PAGINA ANTERIOR) -->
+<a href="pagina-anterior.html" class="nav-arrow left">
+    <span>‹</span>
+</a>
+
+<!-- FLECHA DERECHA (PAGINA SIGUIENTE) -->
+<a href="pagina-siguiente.html" class="nav-arrow right">
+    <span>›</span>
+</a>
+<body>
+
+<div class="main">
+    <div class="cartel">
+
+
+        <div class="num izq">5</div>
+        <div class="num der">6</div>
+
+        <div class="titulo">ARMAS CUERPO A CUERPO</div>
+
+        <div class="linea"></div>
+
+        <!-- COLUMNA IZQUIERDA -->
+        <div class="col izq">
+            <img
+                src="https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/9/9f/Metal_Pick.png/revision/latest?cb=20150615120217"
+                class="arma"
+                alt="Pico de metal">
+            <div class="texto">
+                Con esta fabulosa maravilla aunque un poco oxidada
+                podrás picar sin parar hasta que te sangren las manos
+                y llegues a replantearme si eres tu propio esclavo
+                del farmeo o si eres masoquista.
+                <br><br>
+                Con este pico de metal podrás sentirte poderoso
+                aunque no sea cierto ni mucho menos...
+            </div>
+            <div class="precio">2D₽</div>
+        </div>
+
+        <!-- COLUMNA DERECHA -->
+        <div class="col der">
+            <img
+                src="https://ark.wiki.gg/images/Metal_Hatchet.png?9d110f"
+                class="arma"
+                alt="Hacha de metal">
+            <div class="texto">
+                Esta maravillosa hacha de metal forjada en un horno
+                de un zulo y un mango talado por lo que parece por
+                unos dientes mal cuidados podrás hacer maravillas,
+                talaras bosques enteros, si tu mayor propósito es
+                fastidiar a los indios no hay mejor forma que
+                deforestando todo su bosque con esta hacha que
+                más bien parece que es una sierra
+            </div>
+            <div class="precio">5D₽</div>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    <a href="index.html">
+        Wheeler, Rawson and Co. — Our Guarantee — The Best Prices — The Finest Quality — Always
+    </a>
+</footer>
+
+</body>
+</html>
