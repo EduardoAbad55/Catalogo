@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Índice Wheeler Rawson & Co</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    background: url("https://www.publicdomainpictures.net/pictures/450000/nahled/pergament-vintage-hintergrund-alt-1650324837zDH.jpg") center/cover no-repeat;
+    font-family: 'Great Vibes', cursive;
+    color: #3b3b3b;
+}
+
+/* CONTENEDOR */
+.book {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px 80px;
+    position: relative;
+}
+
+/* NÚMEROS */
+.page-num {
+    position: absolute;
+    top: 20px;
+    font-family: 'Cinzel', serif;
+    font-size: 3em;
+}
+.page-num.left { left: 20px; }
+.page-num.right { right: 20px; }
+
+/* HEADER */
+.header {
+    text-align: center;
+}
+.header small {
+    font-family: 'Cinzel', serif;
+}
+.header h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 3.5em;
+    margin: 10px 0;
+}
+
+/* LÍNEA SUPERIOR */
+.top-line {
+    margin: 20px 0 40px;
+    height: 4px;
+    background: #2f2f2f;
+    position: relative;
+}
+.top-line::before,
+.top-line::after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background: #2f2f2f;
+    position: absolute;
+    top: -7px;
+    transform: rotate(45deg);
+}
+.top-line::before { left: 0; }
+.top-line::after { right: 0; }
+
+/* CONTENIDO */
+.content {
+    display: grid;
+    grid-template-columns: 1fr 2px 1fr;
+    gap: 40px;
+}
+
+/* DIVISOR CENTRAL */
+.divider {
+    background: #2f2f2f;
+}
+
+/* COLUMNAS */
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+/* ITEM */
+.item {
+    text-align: center;
+    font-size: 2em;
+    position: relative;
+}
+
+/* BARRA */
+.item::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 80%;
+    background: #2f2f2f;
+    margin: 15px auto 0;
+}
+.item::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: #2f2f2f;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    top: 48px;
+}
+
+/* LINK INTERACTIVO */
+.item a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    transition: transform 0.35s ease, font-weight 0.35s ease;
+}
+
+/* 🔥 HOVER */
+.item a:hover {
+    transform: scale(1.25);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    margin-top: 80px;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+}
+
+/* 📱 MÓVIL */
+@media (max-width: 768px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
+    .divider,
+    .page-num {
+        display: none;
+    }
+    .item {
+        font-size: 1.6em;
+    }
+    .header h1 {
+        font-size: 2.4em;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="book">
+
+    <div class="page-num left">1</div>
+    <div class="page-num right">2</div>
+
+    <div class="header">
+        <small>WHEELER, RAWSON AND CO.</small>
+        <h1>INDICE</h1>
+    </div>
+
+    <div class="top-line"></div>
+
+    <div class="content">
+        <div class="column">
+            <div class="item"><a href="armas_cuerpo.html">Armas cuerpo a cuerpo</a></div>
+            <div class="item"><a href="armas_distancia.html">Armas a distancia</a></div>
+            <div class="item"><a href="municion.html">Munición</a></div>
+            <div class="item"><a href="accesorios_armas.html">Accesorios de armas</a></div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="column">
+            <div class="item"><a href="tameo_pesca.html">Tameo y pesca</a></div>
+            <div class="item"><a href="caballos_ovejas.html">Caballos y ovejas</a></div>
+            <div class="item"><a href="monturas.html">Monturas</a></div>
+            <div class="item"><a href="ropa_skins.html">Ropa y disfraces (Skins)</a></div>
+        </div>
+    </div>
+
+    <footer>
+        WHEELER, RAWSON AND CO.
+    </footer>
+
+</div>
+
+</body>
+</html>
